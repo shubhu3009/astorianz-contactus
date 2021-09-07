@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins' ,sans-serif;
+}
+nav {
+  width: 100%;
+  background: #2c2c2c;
+  padding: 10px;
+  color: #fff;
+}
+
+nav .container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container1 {
+  width: 80%;
+  margin: auto;
+}
+
+.subnav {
+  background: #1a1a1a;
+  padding: 10px;
+}
+
+.subnav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.subnav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.content 
+{
+	margin-top: 40px;
+	margin-left: 40%;
+	padding: 0px 20px 0px 20px;
+	border-radius: 20px;
+	max-width: 600px;
+	text-align: center;
+}
+#oval{
+      width: 300px;
+      height: 70px;
+      background: #0f3959;
+      border-radius: 100px / 50px;
+      box-shadow: 0px 0px 5px 5px gray;
+}
+.content h1
+{
+	font-size: 40px;
+	font-weight: 500;
+	color: white;
+}
+section{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	
+}
+section::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	
+}
+section .container{
+	position: relative;
+	min-width: 1100px;
+	min-height: 550px;
+	display: flex;
+	z-index: 1000;
+}
+section .container .contactinfo{
+	position: absolute;
+	top: 40px;
+	width: 350px;
+	height: calc(100% - 80px);
+	background-color: #0f3959;
+	z-index: 1;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+section .container .contactinfo h2{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 500;
+}
+section .container .contactinfo .info{
+	position: relative;
+	margin: 20px 0;
+}
+section .container .contactinfo .info li{
+	position: relative;
+	list-style: none;
+	display: flex;
+	margin: 20px 0;
+	cursor: pointer;
+	align-items: flex-start;
+}
+section .container .contactinfo .info li span:nth-child(1){
+	width: 30px;
+	min-width: 30px;
+}
+section .container .contactinfo .info li span:nth-child(1) i{
+	max-width: 100px;
+	filter: invert(1);
+	opacity: 0.5;
+}
+section .container .contactinfo .info li span:nth-child(2){
+	color: #fff;
+	margin-left: 10px;
+	font-weight: 300;
+	opacity: 0.5;
+}
+section .container .contactinfo .info li:hover span:nth-child(1) i,
+section .container .contactinfo .info li:hover span:nth-child(2){
+	opacity: 1;
+}
+section .container .contactinfo .sci{
+	position: relative;
+	display: flex;
+}
+section .container .contactinfo .sci li{
+	list-style: none;
+	margin-right: 15px;
+}
+section .container .contactinfo .sci li a{
+	text-decoration: none;
+}
+section .container .contactinfo .sci li a img{
+	filter: invert(1);
+	opacity: 0.5;
+}
+section .container .contactinfo .sci li:hover a img{
+	opacity: 1;
+}
+section .container .contactForm{
+	position: absolute;
+	padding: 70px 50px;
+	background-color: #fff;
+	margin-left: 150px;
+	padding-left: 250px;
+	width: calc(100% - 150px);
+	height: 100%;
+	box-shadow: 0 5px 50px rgba(0,0,0,0.5);
+}
+section .container .contactForm h2{
+	color: #0f3959;
+	font-size: 24px;
+	font-weight: 500;
+}
+section .container .contactForm .formBox{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+section .container .contactForm .formBox .inputBox{
+	position: relative;
+	margin: 0 0 35px 0;
+}
+section .container .contactForm .formBox .inputBox.w50{
+	width: 47%;
+}
+section .container .contactForm .formBox .inputBox.w100{
+	width: 100%;
+}
+section .container .contactForm .formBox .inputBox input,
+section .container .contactForm .formBox .inputBox textarea{
+	width: 100% !important;
+	padding: 5px 0;
+	resize: none;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #777;
+	outline: none;
+}
+section .container .contactForm .formBox .inputBox textarea{
+	min-height: 120px;
+}
+section .container .contactForm .formBox .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	transition: 0.5s;
+	pointer-events: none;
+}
+section .container .contactForm .formBox .inputBox input:focus ~ span,
+section .container .contactForm .formBox .inputBox textarea:focus ~ span,
+section .container .contactForm .formBox .inputBox input:valid ~ span,
+section .container .contactForm .formBox .inputBox textarea:valid ~ span{
+	transform: translateY(-20px);
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #ff568c;
+}
+section .container .contactForm .formBox .inputBox input[type="submit"]{
+	position: relative;
+	cursor: pointer;
+	background-color: #0f3959;
+	color: #fff;
+	border: none;
+	max-width: 150px;
+	padding: 12px;
+}
+section .container .contactForm .formBox .inputBox input[type="submit"]:hover{
+	background-color: #ff568c;
+}
+footer {
+  background: #121212;
+  padding: 4em;
+  padding-bottom: 1em;
+  margin-top: 4em;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+footer .container1 .grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .container1 .grid .col {
+  flex: 1 1 0;
+}
+
+footer .container1 .grid .col h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1em;
+}
+
+footer .container1 .grid .col input {
+  padding: 20px 25px;
+  border-radius: 10px;
+  background: #eaeaea;
+  border: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+footer .container1 .grid .col button {
+  text-align: center;
+  background: #1a1a1a;
+  width: 100%;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px 25px;
+  border: none;
+}
+
+footer .container1 .grid .col ul {
+  list-style: none;
+}
+
+footer .container1 .grid .col ul li {
+  margin-top: 2em;
+}
+
+footer .container1 .grid .col ul li a {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer hr {
+  align-items: center;
+  margin-top: 50px;
+}
+.bott {
+  margin-top: 10px;
+  text-align: center;
+}
+@media (max-width: 991px){
+	.subnav.responsive {
+    	position: relative;
+  	}
+  	.subnav.responsive a.icon {
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+  	}
+  	.subnav.responsive a {
+    	float: none;
+    	display: block;
+    	text-align: left;
+  	}
+	.content {
+		margin-left: 25%;
+	}
+	#oval{
+	      width: 250px;
+	      height: 60px;
+	}
+	.content h1
+	{
+		font-size: 30px;
+	}
+	section .container{
+		position: relative;
+		min-width: 1100px;
+		min-height: 550px;
+		display: flex;
+		z-index: 1000;
+	}
+	section .container .contactinfo{
+		top: 600px;
+		width: 300px;
+		margin-left: 400px;
+	}
+	section .container .contactinfo .sci li{
+		margin-right: 10px;
+	}
+	section .container .contactForm{
+		margin-left: 365px;
+		padding-left: 20px;
+		width: calc(100% - 740px);
+	}
+	footer {
+	  	margin-top: 30em;
+	}
+}
