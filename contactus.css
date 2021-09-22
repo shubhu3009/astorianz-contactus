@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins' ,sans-serif;
+}
+
+
+.contentinfoc
+{
+	margin-top: 40px;
+	text-align: center;
+}
+.contentinfoc h1
+{
+	font-size: 40px;
+	font-weight: 800;
+	text-decoration: underline;
+	color: #0f3959;
+}
+section{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	
+}
+section::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	
+}
+.containerinfoc{
+	position: relative;
+	min-width: 1100px;
+	min-height: 550px;
+	display: flex;
+	
+}
+.containerinfoc .contactinfoc{
+	position: absolute;
+	top: 40px;
+	width:30%;
+	height: calc(100% - 80px);
+	background-color: #0f3959;
+	padding: 40px;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+.containerinfoc .contactinfoc h2{
+	color: #fff;
+	font-size: 24px;
+	font-weight: 500;
+}
+.containerinfoc .contactinfoc ul.infoc{
+	position: relative;
+	margin: 20px 0;
+}
+.containerinfoc .contactinfoc ul.infoc li{
+	position: relative;
+	list-style: none;
+	display: flex;
+	margin: 20px 0;
+	cursor: pointer;
+	align-items: flex-start;
+}
+.containerinfoc .contactinfoc ul.infoc li span:nth-child(1){
+	width: 30px;
+	min-width: 30px;
+}
+.containerinfoc .contactinfoc ul.infoc li span:nth-child(1) i{
+	max-width: 100%;
+	filter: invert(1);
+	opacity: 0.5;
+}
+section .containerinfoc .contactinfoc ul.infoc li span:nth-child(2){
+	color: #fff;
+	margin-left: 10px;
+	font-weight: 300;
+	opacity: 0.5;
+}
+/*section .containerinfoc .contactinfoc ul.infoc li:hover span:nth-child(1) i,
+section .containerinfoc .contactinfoc ul.infoc li:hover span:nth-child(2){
+	opacity: 1;
+}*/
+.containerinfoc .contactinfoc ul.sci{
+	position: relative;
+	display: flex;
+}
+.containerinfoc .contactinfoc ul.sci li{
+	list-style: none;
+	margin-right: 15px;
+}
+.containerinfoc .contactinfoc ul.sci li a{
+	text-decoration: none;
+}
+.containerinfoc .contactinfoc ul.sci li a img{
+	filter: invert(1);
+	opacity: 0.5;
+}
+.containerinfoc .contactinfoc ul.sci li:hover a img{
+	opacity: 1;
+}
+.containerinfoc .contactForm{
+	position: absolute;
+	padding: 70px 50px;
+	background-color: #fff;
+	margin-left: 150px;
+	padding-left: 250px;
+	width: calc(100% - 150px);
+	height: 100%;
+	box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+	z-index: -1;
+}
+.containerinfoc .contactForm h2{
+	color: #0f3959;
+	font-size: 24px;
+	font-weight: 500;
+}
+.containerinfoc .contactForm .formBox{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+.containerinfoc .contactForm .formBox .inputBox{
+	position: relative;
+	margin-bottom: 35px;
+}
+.containerinfoc .contactForm .formBox .inputBox.w50{
+	width: 47%;
+}
+.containerinfoc .contactForm .formBox .inputBox.w100{
+	width: 100%;
+}
+.containerinfoc .contactForm .formBox .inputBox input,
+.containerinfoc .contactForm .formBox .inputBox textarea{
+	width: 100% !important;
+	padding: 5px 0;
+	resize: none;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #777;
+	outline: none;
+}
+.containerinfoc .contactForm .formBox .inputBox textarea{
+	min-height: 120px;
+}
+.containerinfoc .contactForm .formBox .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	transition: 0.3s;
+	pointer-events: none;
+}
+.containerinfoc .contactForm .formBox .inputBox input:focus ~ span,
+.containerinfoc .contactForm .formBox .inputBox textarea:focus ~ span,
+.containerinfoc .contactForm .formBox .inputBox input:valid ~ span,
+.containerinfoc .contactForm .formBox .inputBox textarea:valid ~ span{
+	transform: translateY(-20px);
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #ff568c;
+}
+.containerinfoc .contactForm .formBox .inputBox input[type="submit"]{
+	position: relative;
+	cursor: pointer;
+	background-color: #0f3959;
+	color: #fff;
+	border: none;
+	max-width: 150px;
+	padding: 12px;
+}
+.containerinfoc .contactForm .formBox .inputBox input[type="submit"]:hover{
+	background-color: #ff568c;
+}
+@media (max-width: 1200px)
+{
+	.containerinfoc{
+		width: 90%;
+		min-width: auto;
+		margin: 20px;
+		box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+	}
+	.containerinfoc .contactinfoc{
+		top: 0;
+		height: 550px;
+		position: relative;
+		box-shadow: none;
+
+	}
+	.containerinfoc .contactForm{
+		position: relative;
+		width: calc(100% - 350px);
+		padding-left: 0;
+		margin-left: 0;
+		padding: 40px;
+		height: 550px;
+		box-shadow: none;
+	}
+}
+@media (max-width: 991px)
+{	
+	
+	section::before{
+		display: none;
+	}
+	.containerinfoc{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.containerinfoc .contactForm{
+		width: 100%;
+		height: auto;
+	}
+	.containerinfoc .contactinfoc{
+		width: 100%;
+		height: auto;
+		flex-direction: row;
+		
+	}
+	.containerinfoc .contactinfoc ul.sci{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media (max-width: 600px)
+{
+	.containerinfoc .contactForm{
+		padding: 25px;
+	}
+	.containerinfoc .contactinfoc{
+		padding: 25px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.containerinfoc .contactinfoc ul.sci{
+		margin-top: 40px;
+	}
+	.containerinfoc .contactForm .formBox .inputBox.w50{
+		width: 100%;
+	}
+}
+/*@media only screen and (max-width:600px){
+	section .containerinfoc{
+		width:100%;
+		position: relative;
+		height: 70vh;
+		display: flex;
+		
+	}
+	
+	section .containerinfoc .contactinfoc{
+		width:100%;
+		top: 700px;
+		height: calc(100% - 150px);
+	}
+	section .containerinfoc .contactForm{
+	
+	padding: 5rem 1rem;
+	
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	padding-left: 5rem;
+	
+	margin-left: -1px;
+	width: 100%;
+	
+}
+	footer {
+	  	margin-top:45em;
+	}
+}
+@media only screen and (max-width:900px){
+	section .containerinfoc{
+		width:100%;
+		position: relative;
+		height: 70vh;
+		display: flex;
+		
+	}
+	
+	section .containerinfoc .contactinfoc{
+		width:100%;
+		top: 700px;
+		height: calc(100% - 150px);
+	}
+	section .containerinfoc .contactForm{
+	
+	padding: 5rem 1rem;
+	
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	padding-left: 5rem;
+	margin-left: -1px;
+	width: 100%;
+}
+	footer {
+	  	margin-top:45em;
+	}
+}*/
+/*@media only screen and (max-width: 991px){
+	.subnav.responsive {
+    	position: relative;
+  	}
+  	.subnav.responsive a.icon {
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+  	}
+  	.subnav.responsive a {
+    	float: none;
+    	display: block;
+    	text-align: left;
+  	}
+	.content h1
+	{
+		font-size: 30px;
+	}
+	section .container{
+		position: relative;
+		min-width: 450px;
+		min-height: 550px;
+		display: flex;
+		z-index: 1000;
+	}
+	section .container .contactinfo{
+		top: 600px;
+		width: 300px;
+		margin-left: 80px;
+		height: calc(100% - 150px);
+	}
+	section .container .contactinfo .sci li{
+		margin-right: 6px;
+	}
+	section .container .contactForm{
+		margin-left: 50px;
+		padding-left: 20px;
+		width: calc(100% - 100px);
+	}
+	footer {
+	  	margin-top: 30em;
+	}
+}
+
+
+
+
+
+@media only screen and (max-width: 551px){
+	.subnav.responsive {
+    	position: relative;
+  	}
+  	.subnav.responsive a.icon {
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+  	}
+  	.subnav.responsive a {
+    	float: none;
+    	display: block;
+    	text-align: left;
+  	}
+	.contentinfoc h1
+	{
+		font-size: 15px;
+	}
+	section .containerinfoc{
+		position: relative;
+		width: 30%;
+		min-height: 550px;
+		display: flex;
+		z-index: 1000;
+	}
+	section .containerinfoc .contactinfoc{
+		top: 600px;
+		width: 300px;
+		margin-left: 80px;
+		height: calc(100% - 150px);
+	}
+	section .containerinfoc .contactinfoc .sci li{
+		margin-right: 0px;
+	}
+	section .containerinfoc .contactForm{
+		margin-left: 50px;
+		padding-left: 20px;
+		width: calc(100% - 100px);
+	}
+	footer {
+	  	margin-top: 30em;
+	}
+}*/
